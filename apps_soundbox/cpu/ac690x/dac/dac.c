@@ -93,11 +93,18 @@ const u16 digital_vol_tab[DIGITAL_VOL_MAX_L+1]=
     6713  ,
     8025  ,
     9592  ,
-    11466 ,
-    15200 ,//29
-    16000 ,
-    16384
+    //11466 ,
+    //15200 ,//29
+    //16000 ,
+    16384 ,
+    38400 ,
+    56000 ,
+    //57600
+    115200 ,
+    230400 ,
+    //460800
 };
+
 
 u32 dac_output_counter()
 {
@@ -113,21 +120,21 @@ void dac_int_enable(void)
 {
 	dac_read_en = 0;
 	dac_ie_api(1);
-#if BT_TWS 
+#if BT_TWS
 		dac_mute(0,0);
 #else
-		dac_mute(0,1);	
+		dac_mute(0,1);
 #endif
-	
+
 }
 void dac_int_disable(void)
 {
-#if BT_TWS 
+#if BT_TWS
 		dac_mute(1,0);
 #else
-		dac_mute(1,1);	
+		dac_mute(1,1);
 #endif
-	
+
 	dac_ie_api(0);
 }
 
@@ -198,7 +205,7 @@ int dac_cbuf_enough(void)
 		 {
 			 return 1;
 		 }
-	 	
+
 	 }
 }
 extern void bt_rec_get_data(s16 *buf,u32 len);//录音获取pcm数据函数
@@ -226,7 +233,7 @@ void dac_isr_callback(void *dac_buf,u8 buf_flag)
 	return;
 #endif
 
-#if BT_TWS 
+#if BT_TWS
       inc_dac_cnt(32);
 #endif
 	if(0 == dac_read_en)
@@ -235,10 +242,10 @@ void dac_isr_callback(void *dac_buf,u8 buf_flag)
 			memset(dac_buf,0x00,DAC_BUF_LEN);
 			add_key_voice((s16*)dac_buf,DAC_SAMPLE_POINT*2);
 			dac_digit_energy_value(dac_buf, DAC_BUF_LEN);
-	
+
 #if (ECHO_EN||PITCH_EN)
 	    	cbuf_mixture_echo(dac_buf,DAC_BUF_LEN);
-            rd_da((s16 *)dac_buf);	
+            rd_da((s16 *)dac_buf);
 #endif
 			return;
 		}
@@ -271,6 +278,11 @@ void dac_isr_callback(void *dac_buf,u8 buf_flag)
 	dac_digit_energy_value(read_buf, DAC_BUF_LEN);
     digital_vol_ctrl(read_buf, DAC_BUF_LEN);
 
+
+#ifdef DAC_SET_VOLUNM
+    set_dac_voice(read_buf, DAC_BUF_LEN, g_digital_voicecnt);
+#endif // DAC_SET_VOLUNM
+
 #if (ECHO_EN||PITCH_EN)
     if(fm_mode_var && ((fm_mode_var->scan_mode >= FM_SCAN_BUSY)|| (fm_mode_var->fm_mute)))   ///FM正在搜台，只响应部分按键 //MUTE
 	{
@@ -278,7 +290,7 @@ void dac_isr_callback(void *dac_buf,u8 buf_flag)
 	else
 	{
 		cbuf_mixture_echo(read_buf,DAC_BUF_LEN);
-		rd_da((s16 *)read_buf);	
+		rd_da((s16 *)read_buf);
 	}
 #endif
 
@@ -356,7 +368,7 @@ void audio_init(void)
 	echo_set_vol(MAX_SYS_VOL_L);
 #endif
 
-#if VCOMO_EN   
+#if VCOMO_EN
     dac_init_api(VCOMO_EN, LDO_SLECT, DAC_CHANNEL_SLECT,DAC_ISEL_THIRD);
 #else
     dac_init_api(VCOMO_EN, LDO_SLECT, DAC_CHANNEL_SLECT,DAC_ISEL5U);

@@ -6,7 +6,7 @@
  //aec配置
 AEC_CFG aec_interface =
 {
-    .dac_analog_gain = 20,   //dac最大模拟增益
+    .dac_analog_gain = 20,   //dac最大模拟增益，没有用处
     .mic_analog_gain = 25,    //mic模拟增益
 #if (BT_REC_EN && BT_KTV_EN)
 	.aec_toggle = 0,         //aec_toggle default open
@@ -26,10 +26,10 @@ AEC_CFG aec_interface =
     .aec_set_mic_gain = ladc_mic_gain,
 #if BT_REC_EN
    .rec_mic_buf_write = bt_rec_buf_write,
-#else 
+#else
    .rec_mic_buf_write = NULL,
 #endif
-   
+
 };
 
 const int eq_tab[65] =

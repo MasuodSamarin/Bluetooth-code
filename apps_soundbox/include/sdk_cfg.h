@@ -48,9 +48,9 @@
 ///<LED指示使能
 #define LED_EN                  1
 ///<串口升级
-#define UART_UPDATA_EN          0
+#define UART_UPDATA_EN          0       //经测试，更改后会报错：
 ///<电量监测
-#define SYS_LVD_EN              1
+#define SYS_LVD_EN              1       //经测试，更改后会报错：
 
 #if (BT_TWS == 1)
 	#define BT_KTV_EN			0
@@ -132,7 +132,7 @@
  *           --------音效类配置
  */
 ///<EQ模块开关
-#define EQ_EN			        1
+#define EQ_EN			        0
 //软件EQ,置1开启，置0关闭，对系统时钟要求高，一般要192M，
 //开启后不兼容以前的eq文件，用新的EQ工具，注意eq文件名改为"cfg_eq.bin"
 //由于软件eq速度要求高，不支持无损格式，不支持对箱
@@ -150,7 +150,7 @@
 ///<按键音
 #define KEY_TONE_EN     	    0
 ///<非0表示使用默认音量
-#define SYS_DEFAULT_VOL         0
+#define SYS_DEFAULT_VOL         0       //0的音量大于1
 ///<人声消除
 #define VOCAL_REMOVER			0
 
@@ -188,7 +188,7 @@
 	#define USB_PC_EN           0
 #else
     #define SDMMC0_EN           0
-	#define SDMMC1_EN           1
+	#define SDMMC1_EN           0
 	#define USB_DISK_EN         1
 	#define USB_PC_EN           1
 #endif
@@ -237,7 +237,7 @@
 #endif
 
 ///<来电报号
-#define BT_PHONE_NUMBER     1
+#define BT_PHONE_NUMBER     0
 
 
 /*
@@ -407,7 +407,7 @@
 #if (BT_KTV_EN == 1)
 	#define REC_SOURCE			1
 #else
-	#define REC_SOURCE			1
+	#define REC_SOURCE			0
 #endif
 
 #if (REC_EN == 1)
@@ -431,7 +431,7 @@
 #if (RCSP_LIGHT_HW == 1)
 #define UI_ENABLE                0
 #else
-#define UI_ENABLE                1
+#define UI_ENABLE                0
 #endif
 ///dependency
 #if (UI_ENABLE == 1)
@@ -440,7 +440,7 @@
 #else
     ///都不支持
     #define LCD_128X64_EN        0
-    #define LED_7_EN             0
+    #define LED_7_EN             1
 #endif
 #if ((LCD_128X64_EN == 1) && (LED_7_EN == 1))
 #error  "UI driver support only one"
