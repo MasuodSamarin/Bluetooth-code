@@ -9,8 +9,8 @@
 #define MAX_SYS_VOL_L         30      ///<系统主音量级数
 #define MAX_SYS_VOL_R         30
 
-#define EARPHONE_MAX_VOL_L	  25
-#define EARPHONE_MAX_VOL_R	  25
+#define EARPHONE_MAX_VOL_L	  30
+#define EARPHONE_MAX_VOL_R	  30
 
 /*最大音量设置使用上面最大系统主音量级数*/
 #define DIGITAL_VOL_MAX_L     31      ///<数字通道最大音量调节级数

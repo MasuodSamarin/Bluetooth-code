@@ -5,11 +5,19 @@
 #include "sys_detect.h"
 #include "sdk_cfg.h"
 
-#define LED_BIT           BIT(11) ///PB11
-#define LED_INIT_EN()     {JL_PORTA->PU &= ~LED_BIT;JL_PORTA->PD &= ~LED_BIT;JL_PORTA->DIR &= ~LED_BIT;}
-#define LED_INIT_DIS()    {JL_PORTA->PU &= ~LED_BIT;JL_PORTA->PD &= ~LED_BIT;JL_PORTA->DIR |= LED_BIT;}
-#define B_LED_ON()        JL_PORTA->OUT &= ~LED_BIT;
-#define B_LED_OFF()       JL_PORTA->OUT |= LED_BIT;
+//#define LED_BIT           BIT(11) ///PA11
+//#define LED_INIT_EN()     {JL_PORTA->PU &= ~LED_BIT;JL_PORTA->PD &= ~LED_BIT;JL_PORTA->DIR &= ~LED_BIT;}
+//#define LED_INIT_DIS()    {JL_PORTA->PU &= ~LED_BIT;JL_PORTA->PD &= ~LED_BIT;JL_PORTA->DIR |= LED_BIT;}
+//#define B_LED_ON()        JL_PORTA->OUT &= ~LED_BIT;
+//#define B_LED_OFF()       JL_PORTA->OUT |= LED_BIT;
+/********************
+修改LED灯的引脚。BIT(n)为引脚号，后面的JL_PORTC为引脚编组。
+*************************/
+#define LED_BIT           BIT(5) ///PC11
+#define LED_INIT_EN()     {JL_PORTC->PU &= ~LED_BIT;JL_PORTC->PD &= ~LED_BIT;JL_PORTC->DIR &= ~LED_BIT;}
+#define LED_INIT_DIS()    {JL_PORTC->PU &= ~LED_BIT;JL_PORTC->PD &= ~LED_BIT;JL_PORTC->DIR |= LED_BIT;}
+#define B_LED_ON()        JL_PORTC->OUT &= ~LED_BIT;
+#define B_LED_OFF()       JL_PORTC->OUT |= LED_BIT;
 #define R_LED_ON(...)
 #define R_LED_OFF(...)
 

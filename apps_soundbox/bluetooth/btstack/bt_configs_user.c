@@ -130,10 +130,10 @@ static void low_pwr_deal(u8 mode,u32 timer_ms)
 
 ///---sdp service record profile- 用户选择支持协议--///
 #define USER_SUPPORT_PROFILE_SPP    1
-#define USER_SUPPORT_PROFILE_HFP    1
-#define USER_SUPPORT_PROFILE_A2DP   1
-#define USER_SUPPORT_PROFILE_AVCTP  1
-#define USER_SUPPORT_PROFILE_HID    0
+#define USER_SUPPORT_PROFILE_HFP    0   //通话，免提协议
+#define USER_SUPPORT_PROFILE_A2DP   1   //Advanced Audio Distribution Profile 蓝牙音频传输模型协定
+#define USER_SUPPORT_PROFILE_AVCTP  1   //音视频控制传输协议
+#define USER_SUPPORT_PROFILE_HID    0   //Hunman Interface Device人机交互设备
 static void bt_profile_select_init(void)
 {
     u8 support_profile;
