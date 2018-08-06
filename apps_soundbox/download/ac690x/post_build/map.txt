@@ -192,6 +192,8 @@ Archive member included to satisfy reference by file (symbol)
                               obj\Debug\apps_soundbox\fm\fm_inside\fm_inside.o (symbol from plugin) (src_init_api)
 ../include_lib/dac_lib.a(dac_api.o)
                               a2dp_media_file.o (symbol from plugin) (dac_fade_ctl)
+../include_lib/dac_lib.a(eq_api.o)
+                              obj\Debug\apps_soundbox\cpu\ac690x\dac\eq.o (symbol from plugin) (soft_eq_init)
 ../include_lib/aec_lib.a(aec.o)
                               obj\Debug\apps_soundbox\bluetooth\aec\aec_api.o (symbol from plugin) (aec_set_after_init_register)
 ../include_lib/aec_lib.a(aec_tst_sd.o)
@@ -201,7 +203,7 @@ Archive member included to satisfy reference by file (symbol)
 ../include_lib/aec_lib.a(AGC.o)
                               aec.o (symbol from plugin) (aec_new_agc)
 ../include_lib/dec_lib.a(decoder_phy.o)
-                              obj\Debug\apps_soundbox\music\music.o (symbol from plugin) (get_decode_time)
+                              obj\Debug\apps_soundbox\cpu\ac690x\dac\eq.o (symbol from plugin) (reg_get_decoder_change)
 ../include_lib/dec_lib.a(music_api.o)
                               obj\Debug\apps_soundbox\music\music.o (symbol from plugin) (reg_get_dev_change)
 ../include_lib/dec_lib.a(sup_dec_op.o)
@@ -427,7 +429,7 @@ Archive member included to satisfy reference by file (symbol)
 ../include_lib/periphy_lib.a(adc_api.o)
                               obj\Debug\apps_soundbox\cpu\ac690x\key_drv\key_drv_ad.o (symbol from plugin) (adc_init_api)
 ../include_lib/periphy_lib.a(crc_api.o)
-                              remote_device_db_memory.o (symbol from plugin) (crc16)
+                              obj\Debug\apps_soundbox\cpu\ac690x\dac\eq.o (symbol from plugin) (crc16)
 ../include_lib/periphy_lib.a(winbond_flash.o)
                               cache_vm.o (symbol from plugin) (spiflash_continuous_read_mode_reset)
 ../include_lib/periphy_lib.a(uart_api.o)
@@ -475,7 +477,7 @@ Archive member included to satisfy reference by file (symbol)
 ../include_lib/cpu_lib_ac690x.a(dac_driver.o)
                               dac_api.o (symbol from plugin) (__dac_drv)
 ../include_lib/cpu_lib_ac690x.a(eq_driver.o)
-                              a2dp_media_file.o (symbol from plugin) (soft_eq_run)
+                              obj\Debug\apps_soundbox\cpu\ac690x\dac\eq.o (symbol from plugin) (soft_eq_reset_status)
 ../include_lib/cpu_lib_ac690x.a(rand64.o)
                               authencation.o (symbol from plugin) (get_random_number)
 ../include_lib/cpu_lib_ac690x.a(irq_driver.o)
@@ -523,7 +525,7 @@ Archive member included to satisfy reference by file (symbol)
 ../include_lib/cpu_lib_ac690x.a(clock_driver.o)
                               obj\Debug\apps_soundbox\bluetooth\btstack\bt_configs_user.o (symbol from plugin) (get_osc_internal_l)
 ../include_lib/cpu_lib_ac690x.a(zebra_ram.o)
-                              a2dp_media_file.o (symbol from plugin) (zebra_free)
+                              obj\Debug\apps_soundbox\cpu\ac690x\dac\eq.o (symbol from plugin) (zebra_free)
 ../include_lib/cpu_lib_ac690x.a(startup.o)
                               ../include_lib/rtos_lib.a(os_cpu.o) (_stack)
 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
@@ -695,31 +697,31 @@ C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
                               obj\Debug\apps_soundbox\common\file_operate\file_bs_deal.o (symbol from plugin) (strlen)
 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__ashldi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__ashldi3)
 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__divdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__divdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__extendsfdf2)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__extendsfdf2)
 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__fixsfsi)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__fixsfsi)
 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__floatunsisf)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__floatunsisf)
 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__lshrdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__lshrdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__muldf3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__muldf3)
 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
                               C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o) (__muldi3)
 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__mulsf3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__mulsf3)
 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__truncdfsf2)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__truncdfsf2)
 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__udivdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__udivdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
                               C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o) (__udivmoddi4)
 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o (__umoddi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o (__umoddi3)
 
 Allocating common symbols
 Common symbol       size              file
@@ -730,10 +732,10 @@ fcc_uart_handle     0x0               obj\Debug\apps_soundbox\cpu\ac690x\uart\ua
 BT_PCM_CON_save     0x0               RF_bredr.o (symbol from plugin)
 lofc_res32          0x0               fm_global_dat.o (symbol from plugin)
 OSRdyTbl            0x0               os_core.o (symbol from plugin)
-OSTCBHighRdy        0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+OSTCBHighRdy        0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 bt_trim_cfg         0x0               analog.o (symbol from plugin)
 server_send_sem     0x0               gatt_server_func.o (symbol from plugin)
-fcc_uart_buf        0xd               C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+fcc_uart_buf        0xd               C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 adc_digit_energy_value
                     0x0               obj\Debug\apps_soundbox\cpu\ac690x\ladc\ladc.o (symbol from plugin)
 timer_info          0x0               timer_driver.o (symbol from plugin)
@@ -768,7 +770,7 @@ gap_le_cmd          0x0               gatt_main.o (symbol from plugin)
 t0_cnt1             0x0               obj\Debug\apps_soundbox\cpu\ac690x\timer\timer.o (symbol from plugin)
 uart0_handle        0x0               obj\Debug\apps_soundbox\cpu\ac690x\uart\uart.o (symbol from plugin)
 OSRunning           0x0               os_core.o (symbol from plugin)
-OSTCBCur            0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+OSTCBCur            0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 cur_cfg             0x0               timer_driver.o (symbol from plugin)
 menu_keytask_name   0x0               obj\Debug\apps_soundbox\cpu\ac690x\key_drv\key.o (symbol from plugin)
 music_cur_filetotal
@@ -1111,6 +1113,7 @@ Discarded input sections
  .text          0x00000000        0x0 ladc_api.o (symbol from plugin)
  .text          0x00000000        0x0 src_api.o (symbol from plugin)
  .text          0x00000000        0x0 dac_api.o (symbol from plugin)
+ .text          0x00000000        0x0 eq_api.o (symbol from plugin)
  .text          0x00000000        0x0 aec.o (symbol from plugin)
  .text          0x00000000        0x0 aec_tst_sd.o (symbol from plugin)
  .text          0x00000000        0x0 AnalogAGC.o (symbol from plugin)
@@ -1361,7 +1364,7 @@ zebra_ram        0x000f5600         0x00002f00
 Linker script and memory map
 
 LOAD obj\Debug\apps_soundbox\bluetooth\aec\aec_api.o
-LOAD C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+LOAD C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_configs_user.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_key_deal.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_key_msg.o
@@ -1462,86 +1465,86 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_device.o
 LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x00300000                . = ORIGIN (ram0)
 
-.data           0x00300000      0x11c
+.data           0x00300000      0x230
  *(.data*)
- .data          0x00300000      0x11c C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-memset.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
- .data          0x0030011c        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
+ .data          0x00300000      0x230 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memset.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
+ .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
 
-.ble_rf_ram     0x0030011c      0x900
- .ble_rf_ram    0x0030011c      0x900 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+.ble_rf_ram     0x00300230      0x900
+ .ble_rf_ram    0x00300230      0x900 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
-.ble_bb_ram     0x00300a1c      0xbfc
- .ble_bb_ram    0x00300a1c      0xbfc C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+.ble_bb_ram     0x00300b30      0xbfc
+ .ble_bb_ram    0x00300b30      0xbfc C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
-.bss            0x00301620     0x479c
+.bss            0x00301730     0x47ac
  *(.bss)
- .bss           0x00301620     0x10b0 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .bss           0x003026d0        0x4 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memset.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
- .bss           0x003026d4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
+ .bss           0x00301730     0x10c0 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .bss           0x003027f0        0x4 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memset.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
+ .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
  *(.dac_buf_sec)
- .dac_buf_sec   0x003026d4      0x280 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x003026d4                read_buf
-                0x00302954                bredr_base_addr = .
+ .dac_buf_sec   0x003027f4      0x280 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x003027f4                read_buf
+                0x00302a74                bredr_base_addr = .
  *(.bt_classic_base)
  .bt_classic_base
-                0x00302954      0x450 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x00302a74      0x450 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  *(.bt_sco_codec_data)
  .bt_sco_codec_data
-                0x00302da4      0x400 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x00302ec4      0x400 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  *(.bt_classic_data)
  .bt_classic_data
-                0x003031a4     0x2c00 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- COMMON         0x00305da4       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x00305da4                OSTCBHighRdy
-                0x00305da8                fcc_uart_buf
-                0x00305db8                OSTCBCur
+                0x003032c4     0x2c00 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ COMMON         0x00305ec4       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x00305ec4                OSTCBHighRdy
+                0x00305ec8                fcc_uart_buf
+                0x00305ed8                OSTCBCur
                 0x00300000                SDRAM_BEGIN_ADDR = ORIGIN (ram0)
-                0x00305dbc                SRAM_END_ADDR = .
-                0x00005dbc                sram_end = (. - ORIGIN (ram0))
+                0x00305edc                SRAM_END_ADDR = .
+                0x00005edc                sram_end = (. - ORIGIN (ram0))
                 0x00340080                . = ORIGIN (ram1)
 
-.data1          0x00340080     0x3530
+.data1          0x00340080     0x352c
                 0x00340080                . = ALIGN (0x4)
                 0x00340080                bredr_base_updata_ram1 = .
                 0x00340080                _bredr_nv_mem_begin = .
  *(.ram1_data)
- .ram1_data     0x00340080     0x2728 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .ram1_data     0x00340080     0x2728 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x0034015c                bt_local_addr
                 0x00340180                local
                 0x003401c4                bc51_name
@@ -1558,20 +1561,20 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x003427a8                _bredr_nv_mem_end = .
                 0x003427a8                _ble_nv_mem_begin = .
  *(.bt_nv_data)
- .bt_nv_data    0x003427a8      0x104 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .bt_nv_data    0x003427a8      0x104 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  *(.non_volatile_ram)
  .non_volatile_ram
-                0x003428ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x003428ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x003428fc                _ble_nv_mem_end = .
  *(.eq_buf_sec)
  *(.sd_buf)
- .sd_buf        0x003428fc       0x38 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .sd_buf        0x003428fc       0x38 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x003428fc                sd0_cmd_buf
                 0x00342914                sd1_cmd_buf
                 0x0034292c                g_sd0_var_p
                 0x00342930                g_sd1_var_p
  *(.usb_buf)
- .usb_buf       0x00342934       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .usb_buf       0x00342934       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x00342934                g_husb_read_ctl
                 0x0034293c                mass_mutex
                 0x0034294c                g_susb_dmabuf_p
@@ -1580,7 +1583,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x00342958                USB_Bulk_only
                 0x00342998                g_usb_detect_var
  *(.common)
- .common        0x003429a0      0x126 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .common        0x003429a0      0x126 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x00342a64                set_sys_freq
  *memcpy.o(.text .rodata*)
  *fill*         0x00342ac6        0x2 
@@ -1594,41 +1597,41 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  *icache_hw.o(.text)
                 0x00342c30                _system_cfg_begin = .
  *(.system_cfg)
- .system_cfg    0x00342c30        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .system_cfg    0x00342c30        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x00342c31                _system_cfg_end = .
  *(.fm_code)
  *fill*         0x00342c31        0x3 
- .fm_code       0x00342c34       0x70 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .fm_code       0x00342c34       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x00342c34                fm_isr
- .fm_code       0x00342ca4      0x502 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
-                0x00342ca4                fm_dem
+ .fm_code       0x00342ca0      0x502 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
+                0x00342ca0                fm_dem
  *(.powerdown_text)
- *fill*         0x003431a6        0x2 
+ *fill*         0x003431a2        0x2 
  .powerdown_text
-                0x003431a8      0x408 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x003431a4      0x408 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  *(.zebra_data)
 
-.bss_ram1       0x003435b0     0x1934
+.bss_ram1       0x003435ac     0x1934
  *(.stack)
- .stack         0x003435b0      0x400 ../include_lib/cpu_lib_ac690x.a(startup.o)
-                0x003439b0                _stack
+ .stack         0x003435ac      0x400 ../include_lib/cpu_lib_ac690x.a(startup.o)
+                0x003439ac                _stack
  *(.ram1_bss)
- .ram1_bss      0x003439b0     0x1534 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x003439b0                sbc_detect_work_buf
-                0x003444d0                vm_obj
-                0x00344708                rf
+ .ram1_bss      0x003439ac     0x1534 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x003439ac                sbc_detect_work_buf
+                0x003444cc                vm_obj
+                0x00344704                rf
                 0x000f5600                . = ORIGIN (zebra_ram)
 
 .data3
  *(.zb_core_ram)
                 0x01000000                . = ORIGIN (flash)
 
-.text           0x01000000    0x5c17a
+.text           0x01000000    0x5cbfa
  *startup.o(.text)
  .text          0x01000000      0x104 ../include_lib/cpu_lib_ac690x.a(startup.o)
                 0x01000000                _start
  *(.const_tab)
- .const_tab     0x01000104       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .const_tab     0x01000104       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x01000104                get_key_tab
                 0x01000104                find_dec_ops
                 0x0100011c                fs_list
@@ -1640,7 +1643,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  *vm_common.o(.text)
  *vm_printf.o(.text)
  *(.vm)
- .vm            0x01000124      0x696 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .vm            0x01000124      0x696 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
                 0x01000124                vm_memset
                 0x01000130                vm_memcpy
                 0x01000154                vm_delay
@@ -1670,280 +1673,280 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .version       0x010007ba       0x14 obj\Debug\apps_soundbox\cpu\ac690x\version.o
  .version       0x010007ce        0xe ../include_lib/bluetooth_lib.a(version.o)
  *(.text* .rodata*)
- .text          0x010007dc    0x49c00 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0100a828                board_main
-                0x010125a8                OSInit
-                0x010125f8                OSIdleTaskInit
-                0x010126e8                OSTaskSwitchHook
-                0x01012712                vmm_init
-                0x0103ee70                bt_power_is_poweroff_probe
-                0x01048c60                dct32
-                0x0104a3a4                sbc_fill_buf_d
- *fill*         0x0104a3dc        0x4 
- .rodata        0x0104a3e0     0xb9b8 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0104db94                sbc_proto_4_40m0_d
-                0x0104dc34                synmatrix4_d
-                0x0104dcb4                synmatrix8_d
-                0x0104dd34                const_table
-                0x01052820                counts_3970
-                0x0105284c                counts_diff_3970
-                0x01052878                K_SUM_MIN_BOUNDARY
-                0x01052914                counts_3980
-                0x01052940                counts_diff_3980
-                0x01053434                window_l
-                0x0105347c                sc18_sc09_csdct
-                0x01053508                imdct_s
-                0x01053598                window_s
-                0x0105511c                leavetable_d
+ .text          0x010007dc    0x4a3d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0100acd0                board_main
+                0x01013178                OSInit
+                0x010131c8                OSIdleTaskInit
+                0x010132b8                OSTaskSwitchHook
+                0x010132e2                vmm_init
+                0x0103f604                bt_power_is_poweroff_probe
+                0x01049430                dct32
+                0x0104ab74                sbc_fill_buf_d
+ *fill*         0x0104abac        0x4 
+ .rodata        0x0104abb0     0xbbb4 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0104e560                sbc_proto_4_40m0_d
+                0x0104e600                synmatrix4_d
+                0x0104e680                synmatrix8_d
+                0x0104e700                const_table
+                0x010531ec                counts_3970
+                0x01053218                counts_diff_3970
+                0x01053244                K_SUM_MIN_BOUNDARY
+                0x010532e0                counts_3980
+                0x0105330c                counts_diff_3980
+                0x01053e00                window_l
+                0x01053e48                sc18_sc09_csdct
+                0x01053ed4                imdct_s
+                0x01053f64                window_s
+                0x01055ae8                leavetable_d
  .rodata.str1.1
-                0x01055d98     0x24e4 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                               0x2583 (size before relaxing)
- .rodata.cst8   0x0105827c       0x28 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x01056764     0x25a0 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                               0x263f (size before relaxing)
+ .rodata.cst8   0x01058d04       0x28 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  .rodata.str4.4
-                0x010582a4      0x260 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- *fill*         0x01058504        0xc 
- .rodata.cst32  0x01058510      0x140 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .rodata.cst16  0x01058650       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .rodata.cst4   0x010586b0        0x8 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .text          0x010586b8        0x0 obj\Debug\apps_soundbox\cpu\ac690x\version.o
- .text          0x010586b8       0x6c ../include_lib/rtos_lib.a(os_cpu.o)
-                0x010586b8                OS_HighPrio
-                0x010586c2                OSCtxSw
- .text          0x01058724       0xae ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
-                0x01058724                _bigint_mul_core_bc51
- *fill*         0x010587d2        0x2 
- .text          0x010587d4        0x0 ../include_lib/bluetooth_lib.a(version.o)
- .text          0x010587d4        0x0 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
- .text          0x010587d4        0x0 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
- .text          0x010587d4      0x170 ../include_lib/bluetooth/bt_syn_lib.a(bt_syn_asm.o)
-                0x010587d4                syn_memcpy
-                0x01058808                syn_ps_seek_best_pos
- .text          0x01058944        0x0 ../include_lib/dec/ape_dec_lib.a(dv_ape.o)
- .text          0x01058944      0x4ea ../include_lib/dec/mp3_dec_lib.a(bc51_mp3_v2.o)
-                0x01058944                mpegaudio_synth_full_asm
-                0x01058b12                III_imdct_s
-                0x01058bb2                fastsdct
-                0x01058c92                imdct36
-                0x01058d4e                III_imdct_l
-                0x01058dee                get_bit_from_stream
- *fill*         0x01058e2e        0x2 
- .text          0x01058e30      0x59e ../include_lib/dec/sbc_dec_lib.a(sbc_fun.o)
-                0x01058e30                sbc_synthesize_four_d
-                0x01058f38                sbc_synthesize_eight_d
-                0x01059036                sbc_get_bits
-                0x01059090                sbc_dec_requantize
-                0x01059184                sbc_synthesize_eight_ddx
-                0x010593c2                sbc_tst_it
- *fill*         0x010593ce        0x2 
- .text          0x010593d0      0x1dc ../include_lib/aec/libBtCalling.a(rfft_afterprocess_asm.o)
-                0x010593d0                rfft_afterprocess_asm
-                0x010594bc                rifft_preprocess_asm
- .text          0x010595ac       0x3e C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
-                0x010595ac                memcmp
- *fill*         0x010595ea        0x2 
- .text          0x010595ec       0x14 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
-                0x010595ec                strcmp
- .text          0x01059600       0x10 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
-                0x01059600                strcpy
- .text          0x01059610        0xc C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
-                0x01059610                strlen
- .text          0x0105961c       0x10 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
-                0x0105961c                __ashldi3
- .text          0x0105962c       0x32 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
-                0x0105962c                __divdi3
- *fill*         0x0105965e        0x2 
- .text          0x01059660       0x5c C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
-                0x01059660                __extendsfdf2
- .text          0x010596bc       0x4c C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
-                0x010596bc                __fixsfsi
- .text          0x01059708       0x56 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
-                0x01059708                __floatunsisf
- *fill*         0x0105975e        0x2 
- .text          0x01059760       0x10 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
-                0x01059760                __lshrdi3
- .text          0x01059770      0x2d0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
-                0x01059770                __muldf3
- .text          0x01059a40       0x12 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
-                0x01059a40                __muldi3
- *fill*         0x01059a52        0x2 
- .text          0x01059a54      0x13c C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
-                0x01059a54                __mulsf3
- .text          0x01059b90       0xe8 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
-                0x01059b90                __truncdfsf2
- .text          0x01059c78       0x10 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
-                0x01059c78                __udivdi3
- .text          0x01059c88       0x8e C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
-                0x01059c88                __udivmoddi4
- *fill*         0x01059d16        0x2 
- .text          0x01059d18       0x14 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
-                0x01059d18                __umoddi3
-                0x01059d2c                . = ALIGN (0x4)
-                0x01059d2c                lmp_hci_handler_begin = .
+                0x01058d2c      0x260 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ *fill*         0x01058f8c        0x4 
+ .rodata.cst32  0x01058f90      0x140 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .rodata.cst16  0x010590d0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .rodata.cst4   0x01059130        0x8 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .text          0x01059138        0x0 obj\Debug\apps_soundbox\cpu\ac690x\version.o
+ .text          0x01059138       0x6c ../include_lib/rtos_lib.a(os_cpu.o)
+                0x01059138                OS_HighPrio
+                0x01059142                OSCtxSw
+ .text          0x010591a4       0xae ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
+                0x010591a4                _bigint_mul_core_bc51
+ *fill*         0x01059252        0x2 
+ .text          0x01059254        0x0 ../include_lib/bluetooth_lib.a(version.o)
+ .text          0x01059254        0x0 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
+ .text          0x01059254        0x0 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
+ .text          0x01059254      0x170 ../include_lib/bluetooth/bt_syn_lib.a(bt_syn_asm.o)
+                0x01059254                syn_memcpy
+                0x01059288                syn_ps_seek_best_pos
+ .text          0x010593c4        0x0 ../include_lib/dec/ape_dec_lib.a(dv_ape.o)
+ .text          0x010593c4      0x4ea ../include_lib/dec/mp3_dec_lib.a(bc51_mp3_v2.o)
+                0x010593c4                mpegaudio_synth_full_asm
+                0x01059592                III_imdct_s
+                0x01059632                fastsdct
+                0x01059712                imdct36
+                0x010597ce                III_imdct_l
+                0x0105986e                get_bit_from_stream
+ *fill*         0x010598ae        0x2 
+ .text          0x010598b0      0x59e ../include_lib/dec/sbc_dec_lib.a(sbc_fun.o)
+                0x010598b0                sbc_synthesize_four_d
+                0x010599b8                sbc_synthesize_eight_d
+                0x01059ab6                sbc_get_bits
+                0x01059b10                sbc_dec_requantize
+                0x01059c04                sbc_synthesize_eight_ddx
+                0x01059e42                sbc_tst_it
+ *fill*         0x01059e4e        0x2 
+ .text          0x01059e50      0x1dc ../include_lib/aec/libBtCalling.a(rfft_afterprocess_asm.o)
+                0x01059e50                rfft_afterprocess_asm
+                0x01059f3c                rifft_preprocess_asm
+ .text          0x0105a02c       0x3e C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
+                0x0105a02c                memcmp
+ *fill*         0x0105a06a        0x2 
+ .text          0x0105a06c       0x14 C:\JL\pi32\lib\libc.a(lib_a-strcmp.o)
+                0x0105a06c                strcmp
+ .text          0x0105a080       0x10 C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
+                0x0105a080                strcpy
+ .text          0x0105a090        0xc C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
+                0x0105a090                strlen
+ .text          0x0105a09c       0x10 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
+                0x0105a09c                __ashldi3
+ .text          0x0105a0ac       0x32 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
+                0x0105a0ac                __divdi3
+ *fill*         0x0105a0de        0x2 
+ .text          0x0105a0e0       0x5c C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
+                0x0105a0e0                __extendsfdf2
+ .text          0x0105a13c       0x4c C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
+                0x0105a13c                __fixsfsi
+ .text          0x0105a188       0x56 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
+                0x0105a188                __floatunsisf
+ *fill*         0x0105a1de        0x2 
+ .text          0x0105a1e0       0x10 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
+                0x0105a1e0                __lshrdi3
+ .text          0x0105a1f0      0x2d0 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
+                0x0105a1f0                __muldf3
+ .text          0x0105a4c0       0x12 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
+                0x0105a4c0                __muldi3
+ *fill*         0x0105a4d2        0x2 
+ .text          0x0105a4d4      0x13c C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
+                0x0105a4d4                __mulsf3
+ .text          0x0105a610       0xe8 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
+                0x0105a610                __truncdfsf2
+ .text          0x0105a6f8       0x10 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
+                0x0105a6f8                __udivdi3
+ .text          0x0105a708       0x8e C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
+                0x0105a708                __udivmoddi4
+ *fill*         0x0105a796        0x2 
+ .text          0x0105a798       0x14 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
+                0x0105a798                __umoddi3
+                0x0105a7ac                . = ALIGN (0x4)
+                0x0105a7ac                lmp_hci_handler_begin = .
  *(.lmp_hci_handler)
  .lmp_hci_handler
-                0x01059d2c       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059d2c                device_manager_hci_handler
-                0x01059d40                lmp_def_hci_handler
-                0x01059d54                master_hci_cmd_handler
-                0x01059d68                slave_hci_cmd_handler
-                0x01059d7c                lmp_hci_handler_end = .
-                0x01059d7c                a2dp_sink_media_probe_begin = .
+                0x0105a7ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a7ac                device_manager_hci_handler
+                0x0105a7c0                lmp_def_hci_handler
+                0x0105a7d4                master_hci_cmd_handler
+                0x0105a7e8                slave_hci_cmd_handler
+                0x0105a7fc                lmp_hci_handler_end = .
+                0x0105a7fc                a2dp_sink_media_probe_begin = .
  *(.a2dp_sink_media_probe)
  .a2dp_sink_media_probe
-                0x01059d7c       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059d7c                a2dp_aac_probe
-                0x01059d94                a2dp_sbc_probe
-                0x01059dac                a2dp_sink_media_probe_end = .
-                0x01059dac                a2dp_sink_media_codec_begin = .
+                0x0105a7fc       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a7fc                a2dp_aac_probe
+                0x0105a814                a2dp_sbc_probe
+                0x0105a82c                a2dp_sink_media_probe_end = .
+                0x0105a82c                a2dp_sink_media_codec_begin = .
  *(.a2dp_sink_media_codec)
  .a2dp_sink_media_codec
-                0x01059dac       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059dac                aac_sink_codec
-                0x01059dc4                sbc_sink_codec
-                0x01059ddc                a2dp_sink_media_codec_end = .
-                0x01059ddc                a2dp_source_media_codec_begin = .
+                0x0105a82c       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a82c                aac_sink_codec
+                0x0105a844                sbc_sink_codec
+                0x0105a85c                a2dp_sink_media_codec_end = .
+                0x0105a85c                a2dp_source_media_codec_begin = .
  *(.a2dp_source_media_codec)
  .a2dp_source_media_codec
-                0x01059ddc       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059ddc                a2dp_source_codec
-                0x01059df4                a2dp_source_media_codec_end = .
-                0x01059df4                a2dp_event_handler_begin = .
+                0x0105a85c       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a85c                a2dp_source_codec
+                0x0105a874                a2dp_source_media_codec_end = .
+                0x0105a874                a2dp_event_handler_begin = .
  *(.a2dp_event_handler)
  .a2dp_event_handler
-                0x01059df4       0x70 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059df4                a2dp_sink_event_handler
-                0x01059e10                a2dp_source_event_handler
-                0x01059e2c                probe_source_event_handler
-                0x01059e48                avctp_a2dp_event_handler
-                0x01059e64                a2dp_event_handler_end = .
-                0x01059e64                clock_switcher_begin = .
+                0x0105a874       0x70 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a874                a2dp_sink_event_handler
+                0x0105a890                a2dp_source_event_handler
+                0x0105a8ac                probe_source_event_handler
+                0x0105a8c8                avctp_a2dp_event_handler
+                0x0105a8e4                a2dp_event_handler_end = .
+                0x0105a8e4                clock_switcher_begin = .
  *(.clock_switch.fun)
  .clock_switch.fun
-                0x01059e64        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059e64                __switch_init_ad_key0_clk_reset
-                0x01059e68                __switch_init_timer0_clk_reset
-                0x01059e6c                __switch_init_uart_reset
-                0x01059e70                clock_switcher_end = .
-                0x01059e70                bt_sleep_begin = .
+                0x0105a8e4        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a8e4                __switch_init_ad_key0_clk_reset
+                0x0105a8e8                __switch_init_timer0_clk_reset
+                0x0105a8ec                __switch_init_uart_reset
+                0x0105a8f0                clock_switcher_end = .
+                0x0105a8f0                bt_sleep_begin = .
  *(.bt_sleep)
- .bt_sleep      0x01059e70       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059e70                bt_suspend_hci_resumehci_release
-                0x01059e7c                bt_suspend_a2dp_resumea2dp_release
-                0x01059e88                bt_suspend_avctp_resumeavctp_release
-                0x01059e94                bt_suspend_hfp_resumehfp_release
-                0x01059ea0                bt_suspend_hid_resumehid_release
-                0x01059eac                bt_suspend_sdp_resumesdp_release
-                0x01059eb8                bt_suspend_sdp_slave_resumesdp_slave_release
-                0x01059ec4                bt_suspend_user_cmd_loop_resumeuser_cmd_loop_release
-                0x01059ed0                bt_sleep_end = .
+ .bt_sleep      0x0105a8f0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a8f0                bt_suspend_hci_resumehci_release
+                0x0105a8fc                bt_suspend_a2dp_resumea2dp_release
+                0x0105a908                bt_suspend_avctp_resumeavctp_release
+                0x0105a914                bt_suspend_hfp_resumehfp_release
+                0x0105a920                bt_suspend_hid_resumehid_release
+                0x0105a92c                bt_suspend_sdp_resumesdp_release
+                0x0105a938                bt_suspend_sdp_slave_resumesdp_slave_release
+                0x0105a944                bt_suspend_user_cmd_loop_resumeuser_cmd_loop_release
+                0x0105a950                bt_sleep_end = .
  *(.ble)
- .ble           0x01059ed0       0x10 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059ed0                ble_h4_can_send_packet_now
-                0x01059ed4                ble_h4_send_packet
-                0x01059ed8                ble_h4_packet_handler
-                0x01059edc                __ble_ops
+ .ble           0x0105a950       0x10 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a950                ble_h4_can_send_packet_now
+                0x0105a954                ble_h4_send_packet
+                0x0105a958                ble_h4_packet_handler
+                0x0105a95c                __ble_ops
  *(.bredr)
  *(.bt_power)
  *(.poweroff_flash)
  .poweroff_flash
-                0x01059ee0       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x01059f00                ble_text_begin = .
+                0x0105a960       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105a980                ble_text_begin = .
  *(.ble_irq_text)
-                0x01059f00                ble_text_end = .
-                0x01059f00                bredr_text_begin = .
+                0x0105a980                ble_text_end = .
+                0x0105a980                bredr_text_begin = .
  *(.bredr_irq_text)
  .bredr_irq_text
-                0x01059f00      0x1dc C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0105a0dc                bredr_text_end = .
+                0x0105a980      0x1dc C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105ab5c                bredr_text_end = .
  *(.zebra)
  *(.sys_cfg)
  *(.ape_text)
- .ape_text      0x0105a0dc      0x93c ../include_lib/dec/ape_dec_lib.a(dv_ape.o)
-                0x0105a0ec                do_apply_filter
-                0x0105a35a                predictor_decode_stereo
-                0x0105a4fe                fread8_new
-                0x0105a5c4                range_dec_normalize
-                0x0105a612                range_decode_bits
-                0x0105a634                range_get_symbol
-                0x0105a69c                ape_decode_value_fvhigh
-                0x0105aa18                _task_list_begin = .
+ .ape_text      0x0105ab5c      0x93c ../include_lib/dec/ape_dec_lib.a(dv_ape.o)
+                0x0105ab6c                do_apply_filter
+                0x0105adda                predictor_decode_stereo
+                0x0105af7e                fread8_new
+                0x0105b044                range_dec_normalize
+                0x0105b092                range_decode_bits
+                0x0105b0b4                range_get_symbol
+                0x0105b11c                ape_decode_value_fvhigh
+                0x0105b498                _task_list_begin = .
  *(.task_info)
- .task_info     0x0105aa18       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0105aa18                task_list
-                0x0105aa30                task_connect_dev
-                0x0105aa84                _task_list_end = .
-                0x0105aa84                poweroff_text_begin = .
+ .task_info     0x0105b498       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105b498                task_list
+                0x0105b4b0                task_connect_dev
+                0x0105b504                _task_list_end = .
+                0x0105b504                poweroff_text_begin = .
  *(.poweroff_text)
  .poweroff_text
-                0x0105aa84     0x16d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0105aad0                radio_set_eninv
-                0x0105aaf4                irq_disable
-                0x0105ab0c                irq_enable
-                0x0105abc8                bt_power_off
-                0x0105ac40                slot_timer_remove
-                0x0105ac78                power_baseband_ioctrl
-                0x0105accc                baseband_ioctrl
-                0x0105ace0                irq_handler_register
-                0x0105acfc                irq_global_enable
-                0x0105ad14                slot_timer_register_init
-                0x0105ad98                slot_timer_register
-                0x0105ae6c                irq_global_disable
-                0x0105af48                slot_timer_init
-                0x0105b14c                bd_freq_table_init
-                0x0105b194                bt_poweroff_recover
-                0x0105b1e4                irq_common_handler
-                0x0105b1fc                timer0_init_test
-                0x0105b258                test_exception_isr
-                0x0105b25a                irq_init
-                0x0105b274                irq_sys_enable
-                0x0105b28c                poweroff_wait_pending
-                0x0105b440                test_power_init
-                0x0105b5fa                test_power_off
-                0x0105b602                bredr_main_start_poweroff
-                0x0105b680                irq_sys_disable
-                0x0105b698                push_pop
-                0x0105b6f2                poweroff_memcpy
-                0x0105b708                poweroff_memset
-                0x0105b718                bdhw_set_afh_poweroff
-                0x0105b790                push_pop_bd_base
-                0x0105b7fc                radio_set_eninv_open
-                0x0105b880                bt_power_wakeup_irq_handle
-                0x0105b920                poweroff_irq_rx_handler
-                0x0105b99c                bt_debug_poweroff_isr
-                0x0105b9dc                check_ram1_addr
-                0x0105bafc                reg_memcpy
-                0x0105bb12                reg_push_pop
-                0x0105bc5e                call_main_deal
-                0x0105bda8                _btpower_up
-                0x0105bdc0                get_ram_addr
-                0x0105be70                RF_poweroff_init
-                0x0105c0ea                error_isr_handler
+                0x0105b504     0x16d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105b550                radio_set_eninv
+                0x0105b574                irq_disable
+                0x0105b58c                irq_enable
+                0x0105b648                bt_power_off
+                0x0105b6c0                slot_timer_remove
+                0x0105b6f8                power_baseband_ioctrl
+                0x0105b74c                baseband_ioctrl
+                0x0105b760                irq_handler_register
+                0x0105b77c                irq_global_enable
+                0x0105b794                slot_timer_register_init
+                0x0105b818                slot_timer_register
+                0x0105b8ec                irq_global_disable
+                0x0105b9c8                slot_timer_init
+                0x0105bbcc                bd_freq_table_init
+                0x0105bc14                bt_poweroff_recover
+                0x0105bc64                irq_common_handler
+                0x0105bc7c                timer0_init_test
+                0x0105bcd8                test_exception_isr
+                0x0105bcda                irq_init
+                0x0105bcf4                irq_sys_enable
+                0x0105bd0c                poweroff_wait_pending
+                0x0105bec0                test_power_init
+                0x0105c07a                test_power_off
+                0x0105c082                bredr_main_start_poweroff
+                0x0105c100                irq_sys_disable
+                0x0105c118                push_pop
+                0x0105c172                poweroff_memcpy
+                0x0105c188                poweroff_memset
+                0x0105c198                bdhw_set_afh_poweroff
+                0x0105c210                push_pop_bd_base
+                0x0105c27c                radio_set_eninv_open
+                0x0105c300                bt_power_wakeup_irq_handle
+                0x0105c3a0                poweroff_irq_rx_handler
+                0x0105c41c                bt_debug_poweroff_isr
+                0x0105c45c                check_ram1_addr
+                0x0105c57c                reg_memcpy
+                0x0105c592                reg_push_pop
+                0x0105c6de                call_main_deal
+                0x0105c828                _btpower_up
+                0x0105c840                get_ram_addr
+                0x0105c8f0                RF_poweroff_init
+                0x0105cb6a                error_isr_handler
  .poweroff_text
-                0x0105c154       0x26 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
-                0x0105c154                CPU_INT_DIS
-                0x0105c166                CPU_INT_EN
-                0x0105c17a                poweroff_text_end = .
-                0x0105c17a                text_end = .
+                0x0105cbd4       0x26 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
+                0x0105cbd4                CPU_INT_DIS
+                0x0105cbe6                CPU_INT_EN
+                0x0105cbfa                poweroff_text_end = .
+                0x0105cbfa                text_end = .
 
-.version        0x0105c17a       0x1a
+.version        0x0105cbfa       0x1a
  *(.ver_magic_start)
  .ver_magic_start
-                0x0105c17a        0xe C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0105c17a                ver_start_magic
+                0x0105cbfa        0xe C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105cbfa                ver_start_magic
  *(.version)
  *(.ver_magic_end)
  .ver_magic_end
-                0x0105c188        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                0x0105c188                ver_end_magic
+                0x0105cc08        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                0x0105cc08                ver_end_magic
                 0x00300000                data_addr = ADDR (.data)
-                0x0105c17a                data_begin = text_end
-                0x0000011c                data1_size = SIZEOF (.data)
-                0x00301620                bss_begin = ADDR (.bss)
-                0x0000479c                bss_size = SIZEOF (.bss)
+                0x0105cbfa                data_begin = text_end
+                0x00000230                data1_size = SIZEOF (.data)
+                0x00301730                bss_begin = ADDR (.bss)
+                0x000047ac                bss_size = SIZEOF (.bss)
                 0x00340080                ram1_addr = ADDR (.data1)
-                0x0105c296                ram1_begin = (text_end + SIZEOF (.data))
-                0x00003530                ram1_size = SIZEOF (.data1)
-                0x003435b0                bss_ram1_begin = ADDR (.bss_ram1)
+                0x0105ce2a                ram1_begin = (text_end + SIZEOF (.data))
+                0x0000352c                ram1_size = SIZEOF (.data1)
+                0x003435ac                bss_ram1_begin = ADDR (.bss_ram1)
                 0x00001934                bss_ram1_size = SIZEOF (.bss_ram1)
 START GROUP
 LOAD ../include_lib/rtos_lib.a
@@ -2003,54 +2006,54 @@ LOAD C:\JL\pi32\lib\libc.a
 LOAD C:\JL\pi32\lib\libcompiler-rt.a
 OUTPUT(download\ac690x\post_build\ac690x.or32 elf32-pi32)
 
-.debug_str      0x00000000    0x2d5ae
- .debug_str     0x00000000    0x2d5ae C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
-                              0x309e4 (size before relaxing)
+.debug_str      0x00000000    0x2d71d
+ .debug_str     0x00000000    0x2d71d C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+                              0x30b6b (size before relaxing)
 
-.debug_loc      0x00000000    0x2517b
- .debug_loc     0x00000000    0x2517b C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+.debug_loc      0x00000000    0x25348
+ .debug_loc     0x00000000    0x25348 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
 .debug_abbrev   0x00000000      0xf6f
- .debug_abbrev  0x00000000      0xea7 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+ .debug_abbrev  0x00000000      0xea7 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
  .debug_abbrev  0x00000ea7       0x28 ../include_lib/rtos_lib.a(os_cpu.o)
  .debug_abbrev  0x00000ecf       0x28 ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
  .debug_abbrev  0x00000ef7       0x28 ../include_lib/cpu_lib_ac690x.a(startup.o)
  .debug_abbrev  0x00000f1f       0x28 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
  .debug_abbrev  0x00000f47       0x28 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
 
-.debug_info     0x00000000    0x8315f
- .debug_info    0x00000000    0x8267f C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .debug_info    0x0008267f      0x204 ../include_lib/rtos_lib.a(os_cpu.o)
- .debug_info    0x00082883      0x20e ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
- .debug_info    0x00082a91      0x1e5 ../include_lib/cpu_lib_ac690x.a(startup.o)
- .debug_info    0x00082c76      0x1d2 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
- .debug_info    0x00082e48      0x317 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
+.debug_info     0x00000000    0x83561
+ .debug_info    0x00000000    0x82a81 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .debug_info    0x00082a81      0x204 ../include_lib/rtos_lib.a(os_cpu.o)
+ .debug_info    0x00082c85      0x20e ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
+ .debug_info    0x00082e93      0x1e5 ../include_lib/cpu_lib_ac690x.a(startup.o)
+ .debug_info    0x00083078      0x1d2 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
+ .debug_info    0x0008324a      0x317 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
 
-.debug_ranges   0x00000000     0x85f0
- .debug_ranges  0x00000000     0x85f0 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+.debug_ranges   0x00000000     0x85e8
+ .debug_ranges  0x00000000     0x85e8 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
 .debug_macinfo  0x00000000        0x1
  .debug_macinfo
-                0x00000000        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x00000000        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
 .debug_pubnames
-                0x00000000    0x17010
+                0x00000000    0x170fa
  .debug_pubnames
-                0x00000000    0x17010 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x00000000    0x170fa C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
 .debug_pubtypes
                 0x00000000     0xe7c9
  .debug_pubtypes
-                0x00000000     0xe7c9 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
+                0x00000000     0xe7c9 C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
 
-.debug_line     0x00000000    0x453b0
- .debug_line    0x00000000    0x44ec7 C:\Users\13612\AppData\Local\Temp\lto-llvm-74d93d.o
- .debug_line    0x00044ec7       0xc3 ../include_lib/rtos_lib.a(os_cpu.o)
- .debug_line    0x00044f8a       0x7f ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
- .debug_line    0x00045009       0x2a ../include_lib/bluetooth_lib.a(version.o)
- .debug_line    0x00045033       0xf3 ../include_lib/cpu_lib_ac690x.a(startup.o)
- .debug_line    0x00045126       0xb9 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
- .debug_line    0x000451df      0x1d1 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
+.debug_line     0x00000000    0x45905
+ .debug_line    0x00000000    0x4541c C:\Users\13612\AppData\Local\Temp\lto-llvm-1b255d.o
+ .debug_line    0x0004541c       0xc3 ../include_lib/rtos_lib.a(os_cpu.o)
+ .debug_line    0x000454df       0x7f ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
+ .debug_line    0x0004555e       0x2a ../include_lib/bluetooth_lib.a(version.o)
+ .debug_line    0x00045588       0xf3 ../include_lib/cpu_lib_ac690x.a(startup.o)
+ .debug_line    0x0004567b       0xb9 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
+ .debug_line    0x00045734      0x1d1 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
 
 .debug_aranges  0x00000000       0xa0
  .debug_aranges

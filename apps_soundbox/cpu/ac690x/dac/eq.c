@@ -1,4 +1,4 @@
-#include "sdk_cfg.h"
+#include "include/sdk_cfg.h"
 #include "dac/dac_api.h"
 #include "dac/eq_api.h"
 #include "dac/eq.h"
@@ -6,8 +6,8 @@
 #include "common/flash_cfg.h"
 #include "file_operate/logic_dev_list.h"
 #include "dec/decoder_phy.h"
-#if EQ_EN
-
+//#if EQ_EN
+#if 1
 
 #define USE_EQ_DBG_MALLOC 1
 
@@ -28,17 +28,19 @@ static u8 eq_switch_type = 0xff;
 
 int user_eq_seg_gain[6][10] =
 {
-	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}, ///<Normal
+	{ 0, 0, 0, 0, 0, 0, 2, 2, 1, 1}, ///<Normal
+	{ 0, 1, 7, 9, 10, 8, 4, 2, 0, 0}, ///<Custom
 	{ 0, 8, 8, 4, 0, 0, 0, 0, 2, 2}, ///<Rock
 	{-2, 0, 2, 4,-2,-2, 0, 0, 4, 4}, ///<Pop
-	{ 4, 2, 0,-3,-6,-6,-3, 0, 3, 5}, ///<Classic
 	{ 0, 0, 0, 4, 4, 4, 0, 2, 3, 4}, ///<Jazz
 	{-2, 0, 0, 2, 2, 0, 0, 0, 4, 4}, ///<Country
 };
 
 int user_eq_global_gain[6] =
 {
-	0,-6,-3,-6,-6,-3
+//	0,-6,-3,-6,-6,-3
+    -3,3,0,3,3,0
+//    0,10,12,12,12,6
 };
 
 
@@ -62,7 +64,7 @@ void eq_init(void)
 void eq_enable(void)
 {
     tbool ret;
-	
+
 	if(1 == eq_switch_state)
 	{
 		return;
@@ -129,12 +131,12 @@ void eq_enable(void)
 
 void eq_disable(void)
 {
-    
+
 	if(0 == eq_switch_state)
 	{
 		return;
 	}
-	
+
 	eq_dis_api();
 
 #if USE_EQ_DBG_MALLOC
@@ -145,7 +147,7 @@ void eq_disable(void)
         eq_dbg_online = NULL;
     }
 #endif // USE_EQ_DBG_MALLOC
-	
+
 	eq_switch_state = 0;
 }
 
@@ -158,7 +160,7 @@ void eq_mode_sw(int mode)
 {
 	if(0 == eq_switch_state)
 	{
-		return;		
+		return;
 	}
 	eq_mode_api(mode);
 }
@@ -223,8 +225,8 @@ u8 update_ef_info(void *ef_info_addr,u16 size,u8 cnt)
 /*----------------------------------------------------------------------------*/
 /**@brief  配置文件读取函数
    @param  buff 存放配置文件的buff
-           cfg_file_num 配置文件号
-           cfg_len 配置文件的总长度
+           cfg_file_num 配置文件�?
+           cfg_len 配置文件的总长�?
    @return ture配置文件读取成功  false配置文件读取失败
    @note   bool read_cfg_file(u8 *buff,u8 cfg_file_num,u16 cfg_len)
 */
@@ -256,7 +258,7 @@ bool read_cfg_file(u8 *buff,u8* cfg_file_name,u16 cfg_len)
     if(!syd_get_file_bypath(fs_hdl ,&file_hdl, cfg_file_name,0))
     {
         eq_puts("syd_get_file_byindex err!\n");
-        //以下两部顺序不能变
+        //以下两部顺序不能�?
         syd_file_close(fs_hdl,&file_hdl);//失败的情况下关闭文件
         syd_drive_close(&fs_hdl);//失败的情况下关闭文件系统
         return FALSE;
@@ -267,7 +269,7 @@ bool read_cfg_file(u8 *buff,u8* cfg_file_name,u16 cfg_len)
     if(tmp_eq_dbg_buff->crc16 == CRC16((u8*)buff,cfg_len-4))
     {
         eq_puts("eq_cfg_file_crc_succ\n");
-        //以下两部顺序不能变
+        //以下两部顺序不能�?
         syd_file_close(fs_hdl,&file_hdl);//完成操作后，关闭文件
         syd_drive_close(&fs_hdl);  //完成操作后，关闭文件系统
         return true;
@@ -275,7 +277,7 @@ bool read_cfg_file(u8 *buff,u8* cfg_file_name,u16 cfg_len)
     else
     {
         eq_puts("eq_cfg_file_crc_err\n");
-        //以下两部顺序不能变
+        //以下两部顺序不能�?
         syd_file_close(fs_hdl,&file_hdl);//完成操作后，关闭文件
         syd_drive_close(&fs_hdl);  //完成操作后，关闭文件系统
         return false;
@@ -295,7 +297,7 @@ u8 get_eq_default_mode(void)
 	}
 	else
 	{
-		return (u8)eq_dbg_online->eq_type; 
+		return (u8)eq_dbg_online->eq_type;
 	}
 }
 
@@ -303,7 +305,7 @@ u8 get_eq_default_mode(void)
 void update_eq_table_data(s8 *eq_table,u16 offset,u16 eq_size,s8 *eq_global_gain)
 {
    u16 cnt;
-   int *eq_gain_p; 
+   int *eq_gain_p;
 
 	if(eq_dbg_online == NULL)
 	{
@@ -312,7 +314,7 @@ void update_eq_table_data(s8 *eq_table,u16 offset,u16 eq_size,s8 *eq_global_gain
 	}
 
    if(eq_table != NULL)
-   {	   
+   {
    		eq_gain_p = (int*)eq_dbg_online->eq_freq_gain;
    		eq_gain_p += offset;
    		for(cnt = 0; cnt < eq_size;cnt++)
@@ -323,7 +325,7 @@ void update_eq_table_data(s8 *eq_table,u16 offset,u16 eq_size,s8 *eq_global_gain
    }
 
    if(eq_global_gain != NULL)
-   {	   
+   {
    		eq_gain_p  = eq_dbg_online->eq_gain;
    		for(cnt = 0; cnt < 6;cnt++)
    		{
@@ -331,7 +333,7 @@ void update_eq_table_data(s8 *eq_table,u16 offset,u16 eq_size,s8 *eq_global_gain
    		}
         memcpy(user_eq_global_gain, eq_dbg_online->eq_gain, sizeof(user_eq_global_gain));
    }
-   
+
    /* puts("---update_eq---:"); */
    /* put_buf(eq_table,eq_size); */
    /* put_buf(eq_global_gain,6); */

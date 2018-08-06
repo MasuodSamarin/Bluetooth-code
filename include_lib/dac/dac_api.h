@@ -28,7 +28,7 @@
 #define AUTO_FADE_CTL		 BIT(3)
 #define AUTO_MUTE_CFG		 AUTO_MUTE_ENABLE | AUTO_UNMUTE_FADE
 
-#define LDO_SLECT  LDO_1      ///LDO选择  DAC_VDD需要电容选择LDO1，不需要电容选择LDO2 ,LDO2的性噪比差点
+#define LDO_SLECT  LDO_2      ///LDO选择  DAC_VDD需要电容选择LDO1，不需要电容选择LDO2 ,LDO2的性噪比差点
 
 #if DAC2IIS_EN
 #define BT_CHANNEL         DAC_DIGITAL_DVOL

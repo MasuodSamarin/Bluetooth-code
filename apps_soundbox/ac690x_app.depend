@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1533373918 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\bluetooth\aec\aec_api.c
+1533531971 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\bluetooth\aec\aec_api.c
 	"aec/aec_api.h"
 	"sdk_cfg.h"
 	"dac/ladc.h"
@@ -20,7 +20,7 @@
 
 1502258189 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\include_lib\cpu\ac690x\hw_cpu.h
 
-1533378969 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\include\sdk_cfg.h
+1533525738 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\include\sdk_cfg.h
 	"includes.h"
 	"bluetooth/bluetooth_api.h"
 
@@ -144,7 +144,7 @@
 1522312857 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\include_lib\bluetooth\avctp_user.h
 	"typedef.h"
 
-1533471704 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\include_lib\dac\dac_api.h
+1533536089 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\include_lib\dac\dac_api.h
 	"typedef.h"
 	"cpu/dac_param.h"
 
@@ -707,7 +707,7 @@
 	"bluetooth/avctp_user.h"
 	"bluetooth/bluetooth_api.h"
 
-1533394770 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\dac.c
+1533536006 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\dac.c
 	"sdk_cfg.h"
 	"dac/dac_api.h"
 	"dac/eq_api.h"
@@ -739,8 +739,8 @@
 	"common/msg.h"
 	"rtos/os_api.h"
 
-1502258188 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\eq.c
-	"sdk_cfg.h"
+1533538994 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\eq.c
+	"include/sdk_cfg.h"
 	"dac/dac_api.h"
 	"dac/eq_api.h"
 	"dac/eq.h"
@@ -806,7 +806,7 @@
 	"dac/ladc.h"
 	"irq_api.h"
 
-1502258188 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\iis\wm8978.c
+1533525359 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\iis\wm8978.c
 	"iic.h"
 	"iis.h"
 	"iis/wm8978.h"
@@ -1188,7 +1188,7 @@
 1502258188 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\include\echo\echo_key.h
 	"sdk_cfg.h"
 
-1502258188 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\echo\echo_api.c
+1533518798 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\echo\echo_api.c
 	"common/app_cfg.h"
 	"rtos/os_api.h"
 	"rtos/os_cfg.h"
@@ -1444,7 +1444,7 @@
 	"echo/echo_api.h"
 	"linein.h"
 
-1522315612 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\main\main.c
+1533539285 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\main\main.c
 	"sdk_cfg.h"
 	"includes.h"
 	"main_key.h"
@@ -1707,4 +1707,8 @@
 1502258188 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\usb_device\usb_key.c
 	"usb_key.h"
 	"common/msg.h"
+
+1533525738 f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\\include\sdk_cfg.h
+	"includes.h"
+	"bluetooth/bluetooth_api.h"
 

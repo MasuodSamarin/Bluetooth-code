@@ -18,7 +18,7 @@
 #define ECHO_DEF_DEEP_VAL  1024 //默认深度 0-1024	//1024 -> echo_deep_max_set(vol)
 #define ECHO_DEF_VOL_VAL   128  //默认强度 0-128
 
-static const EF_REVERB_PARM2 ef_parm = 
+static const EF_REVERB_PARM2 ef_parm =
 {
 	/* unsigned short deepval; 设置后，reverb_init初始化值会被覆盖*/
 	ECHO_DEF_DEEP_VAL,
@@ -27,7 +27,7 @@ static const EF_REVERB_PARM2 ef_parm =
 	ECHO_DEF_VOL_VAL,
 
 	/* unsigned short gainval;  音量增益 最大值：4096*/
-    4000,
+    4096,
 
 	/* unsigned short rs_mode;  1:高精度变采样    0:低精度变采样 */
 	0x100,
@@ -47,7 +47,7 @@ static const EF_REVERB_PARM2 ef_parm =
 //-12db		-27~0
 //normal	0~63
 //x2		64~76
-static const MIC_VAR_SET mic_parm = 
+static const MIC_VAR_SET mic_parm =
 {
 	/* u8 use_magc;//agc开关 */
     1,

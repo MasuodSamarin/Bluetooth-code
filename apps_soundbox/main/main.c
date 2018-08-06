@@ -71,34 +71,34 @@ extern void enter_sleep_mode(void);
 extern void set_vocal_flag(u8 sw);
 extern u8 get_vocal_flag(void);
 
-extern const u32 ad_table[]; 
+extern const u32 ad_table[];
 
 void set_poweroff_wakeup_io()
 {
 	u8 wakeup_io_en = 0;
 	u8 wakeup_edge = 0;
 
-	//BIT(0)  PR0 : 0 disable  1 enable	
-	//BIT(1)  PR1 : 0 disable  1 enable	
-	//BIT(2)  PR2 : 0 disable  1 enable	
-	//BIT(3)  PR3 : 0 disable  1 enable	
+	//BIT(0)  PR0 : 0 disable  1 enable
+	//BIT(1)  PR1 : 0 disable  1 enable
+	//BIT(2)  PR2 : 0 disable  1 enable
+	//BIT(3)  PR3 : 0 disable  1 enable
 	/* wakeup_io_en |= WAKE_UP_PR0 | WAKE_UP_PR1 | WAKE_UP_PR2 | WAKE_UP_PR3; */
 	wakeup_io_en |=  WAKE_UP_PR2;
 
 	//BIT(4)  PR0 : 0 rising dege  1 failling edge
-	//BIT(5)  PR1 : 0 rising dege  1 failling edge 	
-	//BIT(6)  PR2 : 0 rising dege  1 failling edge 
-	//BIT(7)  PR3 : 0 rising dege  1 failling edge 
+	//BIT(5)  PR1 : 0 rising dege  1 failling edge
+	//BIT(6)  PR2 : 0 rising dege  1 failling edge
+	//BIT(7)  PR3 : 0 rising dege  1 failling edge
 	/* wakeup_edge |= EDGE_PR0 | EDGE_PR1 | EDGE_PR2 | EDGE_PR3;     //failling edge */
 	/* wakeup_edge &= ~(EDGE_PR0 | EDGE_PR1 | EDGE_PR2 | EDGE_PR3);  //rising dege */
 	wakeup_edge |= EDGE_PR2;     //failling edge
 
-	soft_poweroff_wakeup_io(wakeup_io_en , wakeup_edge); 
+	soft_poweroff_wakeup_io(wakeup_io_en , wakeup_edge);
 }
 
 /*enter sleep mode wakeup IO setting*/
 void enter_sleep_mode_set(u16 wakeup_cfg , u8 wakeup_edge)
-{	
+{
 	close_wdt();
 
 	dac_off_control(); //close dac mudule
@@ -113,7 +113,7 @@ void enter_sleep_mode_set(u16 wakeup_cfg , u8 wakeup_edge)
 	JL_AUDIO->DAA_CON1 = 0;
 	JL_AUDIO->DAA_CON2 = 0;
 	JL_AUDIO->DAA_CON3 = 0;
-	JL_AUDIO->DAA_CON4 = 0;
+	JL_AUDIO->DAA_CON4 = 0x10;
 	JL_AUDIO->DAA_CON5 = 0;
 
 	JL_WAKEUP->CON0 = 0;      //wakeup enbale
@@ -331,7 +331,7 @@ void enter_sleep_mode_set(u16 wakeup_cfg , u8 wakeup_edge)
 			break;
 
 		default:
-			return;	
+			return;
 	}
 }
 
@@ -376,8 +376,8 @@ static void delay_us(u32 n)
 }
 
 
-extern const u32 ad_table[]; 
-extern void adc_init_api(u32 channel,u32 lsb_clk,u8 lvd_en); 
+extern const u32 ad_table[];
+extern void adc_init_api(u32 channel,u32 lsb_clk,u8 lvd_en);
 extern void adc_scan(void *param);
 extern u16 get_battery_level(void);
 
@@ -385,9 +385,9 @@ static u8 low_power_cnt = 0;
 static u32 normal_power_cnt = 0;
 
 /* mode 1:power on     2:power off*/
-void ldo5v_detect_deal(u8 mode) 
+void ldo5v_detect_deal(u8 mode)
 {
-	static u32 delay_2ms_cnt = 0; 
+	static u32 delay_2ms_cnt = 0;
 	u8 val = 0;
 	u8 tmp;
 
@@ -396,7 +396,7 @@ void ldo5v_detect_deal(u8 mode)
 }
 //message in this table can do when a phone call
 //be careful to add a message
-const int check_msg_table[] = 
+const int check_msg_table[] =
 {
 	SYS_EVENT_LGDEV_ONLINE,
 	SYS_EVENT_LGDEV_OFFLINE,
@@ -436,7 +436,7 @@ static void TaskMain(void *p)
 #if 0
 	    #include "iic.h"
 	    eeprom_verify();
-		while(1); 
+		while(1);
 #endif
 
 
@@ -448,7 +448,7 @@ static void TaskMain(void *p)
     {
         os_taskq_pend(0, ARRAY_SIZE(msg), msg);
         if(msg[0] == MSG_POWER_ON)
-        {	
+        {
             puts("\n****************power_on***************\n");
             soft_power_ctl(PWR_ON);
             break;
@@ -456,7 +456,7 @@ static void TaskMain(void *p)
     }
   #else
 	while(1)
-	{	
+	{
 		rtc_module_ldo5v_detect(1,0);
 		soft_power_ctl(PWR_OFF);
 	    memset(msg,0x00,sizeof(msg));
@@ -466,19 +466,19 @@ static void TaskMain(void *p)
 			printf("key:%x\n",msg[0]);
 		}
 	    if(msg[0] == MSG_POWER_ON)
-		{	 
+		{
 			puts("****************power_on***************\n");
 	        soft_poweroff_cnt = 0;
             soft_power_ctl(PWR_ON);
 	    }
 		else if(msg[0] == MSG_POWER_OFF)
-		{	   
+		{
 			puts("****************power_off***************\n");
 		    soft_power_ctl(PWR_OFF);
 		}
 	}
-#endif		
-#endif		
+#endif
+#endif
 
 	//SFR(JL_SYSTEM->LDO_CON,7,3,1);
     led_init();
@@ -516,12 +516,13 @@ static void TaskMain(void *p)
 				}
 			}
 			if(!flag)
-			   continue;	
+			   continue;
 		}
         //printf("main_msg %08x %08x \n",msg[0],msg[1]);
 #if SUPPORT_APP_RCSP_EN
-		rcsp_main_task_msg_deal_before(msg);	
+		rcsp_main_task_msg_deal_before(msg);
 #endif
+        JL_AUDIO->DAA_CON4 = 0x10;
 		switch(msg[0])
         {
         case SYS_EVENT_LGDEV_ONLINE:
@@ -652,7 +653,7 @@ static void TaskMain(void *p)
             if(dac_ctl.sys_vol_l)
                 dac_ctl.sys_vol_l--;
             user_send_cmd_prepare(USER_CTRL_TEST_KEY,1,&test_box_vol_down);//test_box test
-#if BT_TWS 
+#if BT_TWS
             if(is_check_stereo_slave())
             {
                 os_taskq_post("btmsg", 1, msg[0]);
@@ -677,14 +678,14 @@ static void TaskMain(void *p)
             vm_cache_write(VM_SYS_VOL,&dac_ctl.sys_vol_l,2);
 #endif
             UI_menu_arg(MENU_MAIN_VOL,0);
-			
+
             break;
 
 /******************************************************************
                 “Ù¡ø+
 ******************************************************************/
         case MSG_VOL_UP:
-		
+
 			if(msg[1]&0x80)
             {
 				dac_ctl.sys_vol_l = (u8)(msg[1]&0x7f);
@@ -698,7 +699,7 @@ static void TaskMain(void *p)
                 	dac_ctl.sys_vol_l++;
 
                user_send_cmd_prepare(USER_CTRL_TEST_KEY,1,&test_box_vol_up);//test_box test
-#if BT_TWS 
+#if BT_TWS
                 if(is_check_stereo_slave())
                 {
                     os_taskq_post("btmsg", 1, msg[0]);
@@ -728,9 +729,9 @@ static void TaskMain(void *p)
             vm_cache_write(VM_SYS_VOL,&dac_ctl.sys_vol_l,2);
 #endif
             UI_menu_arg(MENU_MAIN_VOL,0);
-			
+
             break;
-#if BT_TWS 
+#if BT_TWS
         case MSG_VOL_STEREO:
             dac_ctl.sys_vol_l = msg[1] ;
              printf("V = %d\n",dac_ctl.sys_vol_l);
@@ -768,7 +769,7 @@ static void TaskMain(void *p)
             }
             UI_menu(MENU_REFRESH);
             break;
-        
+
         case MSG_LOW_POWER:
             puts("**MSG_LOW_POWER,auto shutdown**\n");
             going_to_pwr_off = 0;
@@ -934,7 +935,7 @@ static void TaskMain(void *p)
         }
 
 #if SUPPORT_APP_RCSP_EN
-		rcsp_main_task_msg_deal_after(msg);	
+		rcsp_main_task_msg_deal_after(msg);
 #endif
 
 	}

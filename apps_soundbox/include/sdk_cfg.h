@@ -132,11 +132,11 @@
  *           --------音效类配置
  */
 ///<EQ模块开关
-#define EQ_EN			        0
+#define EQ_EN			        1
 //软件EQ,置1开启，置0关闭，对系统时钟要求高，一般要192M，
 //开启后不兼容以前的eq文件，用新的EQ工具，注意eq文件名改为"cfg_eq.bin"
 //由于软件eq速度要求高，不支持无损格式，不支持对箱
-#define USE_SOFTWARE_EQ   		0
+#define USE_SOFTWARE_EQ   		0   //开启有卡顿
 ///<EQ uart online debug
 #define EQ_UART_BDG	    		0
 ///<dac声道合并

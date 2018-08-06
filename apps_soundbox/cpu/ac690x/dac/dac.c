@@ -101,9 +101,12 @@ const u16 digital_vol_tab[DIGITAL_VOL_MAX_L+1]=
     56000 ,
     //57
     115200 ,
-    230400 ,
-    300000
+    //230400 ,
+    325000 ,
+    325000
 };
+
+
 
 
 u32 dac_output_counter()

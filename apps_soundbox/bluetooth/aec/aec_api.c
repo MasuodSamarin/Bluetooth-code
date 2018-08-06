@@ -6,7 +6,7 @@
  //aec配置
 AEC_CFG aec_interface =
 {
-    .dac_analog_gain = 20,   //dac最大模拟增益，没有用处
+    .dac_analog_gain = 20,   //dac最大模拟增益，没有用处。默认20,最大30
     .mic_analog_gain = 25,    //mic模拟增益
 #if (BT_REC_EN && BT_KTV_EN)
 	.aec_toggle = 0,         //aec_toggle default open
