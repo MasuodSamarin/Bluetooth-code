@@ -739,7 +739,7 @@
 	"common/msg.h"
 	"rtos/os_api.h"
 
-1533548487 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\eq.c
+1533609358 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\cpu\ac690x\dac\eq.c
 	"include/sdk_cfg.h"
 	"dac/dac_api.h"
 	"dac/eq_api.h"
@@ -1444,7 +1444,7 @@
 	"echo/echo_api.h"
 	"linein.h"
 
-1533548404 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\main\main.c
+1533613626 source:f:\迅雷下载\ac6901开发板资料_压缩包\00_资料百度网盘_20180718_更新了视频和文件夹18\bluetooth-code\apps_soundbox\main\main.c
 	"sdk_cfg.h"
 	"includes.h"
 	"main_key.h"

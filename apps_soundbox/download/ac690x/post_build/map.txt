@@ -697,31 +697,31 @@ C:\JL\pi32\lib\libc.a(lib_a-strcpy.o)
 C:\JL\pi32\lib\libc.a(lib_a-strlen.o)
                               obj\Debug\apps_soundbox\common\file_operate\file_bs_deal.o (symbol from plugin) (strlen)
 C:\JL\pi32\lib\libcompiler-rt.a(ashldi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__ashldi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__ashldi3)
 C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__divdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__divdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(extendsfdf2.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__extendsfdf2)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__extendsfdf2)
 C:\JL\pi32\lib\libcompiler-rt.a(fixsfsi.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__fixsfsi)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__fixsfsi)
 C:\JL\pi32\lib\libcompiler-rt.a(floatunsisf.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__floatunsisf)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__floatunsisf)
 C:\JL\pi32\lib\libcompiler-rt.a(lshrdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__lshrdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__lshrdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__muldf3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__muldf3)
 C:\JL\pi32\lib\libcompiler-rt.a(muldi3.o)
                               C:\JL\pi32\lib\libcompiler-rt.a(muldf3.o) (__muldi3)
 C:\JL\pi32\lib\libcompiler-rt.a(mulsf3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__mulsf3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__mulsf3)
 C:\JL\pi32\lib\libcompiler-rt.a(truncdfsf2.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__truncdfsf2)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__truncdfsf2)
 C:\JL\pi32\lib\libcompiler-rt.a(udivdi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__udivdi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__udivdi3)
 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
                               C:\JL\pi32\lib\libcompiler-rt.a(divdi3.o) (__udivmoddi4)
 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
-                              C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o (__umoddi3)
+                              C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o (__umoddi3)
 
 Allocating common symbols
 Common symbol       size              file
@@ -732,10 +732,10 @@ fcc_uart_handle     0x0               obj\Debug\apps_soundbox\cpu\ac690x\uart\ua
 BT_PCM_CON_save     0x0               RF_bredr.o (symbol from plugin)
 lofc_res32          0x0               fm_global_dat.o (symbol from plugin)
 OSRdyTbl            0x0               os_core.o (symbol from plugin)
-OSTCBHighRdy        0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+OSTCBHighRdy        0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 bt_trim_cfg         0x0               analog.o (symbol from plugin)
 server_send_sem     0x0               gatt_server_func.o (symbol from plugin)
-fcc_uart_buf        0xd               C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+fcc_uart_buf        0xd               C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 adc_digit_energy_value
                     0x0               obj\Debug\apps_soundbox\cpu\ac690x\ladc\ladc.o (symbol from plugin)
 timer_info          0x0               timer_driver.o (symbol from plugin)
@@ -770,7 +770,7 @@ gap_le_cmd          0x0               gatt_main.o (symbol from plugin)
 t0_cnt1             0x0               obj\Debug\apps_soundbox\cpu\ac690x\timer\timer.o (symbol from plugin)
 uart0_handle        0x0               obj\Debug\apps_soundbox\cpu\ac690x\uart\uart.o (symbol from plugin)
 OSRunning           0x0               os_core.o (symbol from plugin)
-OSTCBCur            0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+OSTCBCur            0x4               C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 cur_cfg             0x0               timer_driver.o (symbol from plugin)
 menu_keytask_name   0x0               obj\Debug\apps_soundbox\cpu\ac690x\key_drv\key.o (symbol from plugin)
 music_cur_filetotal
@@ -1364,7 +1364,7 @@ zebra_ram        0x000f5600         0x00002f00
 Linker script and memory map
 
 LOAD obj\Debug\apps_soundbox\bluetooth\aec\aec_api.o
-LOAD C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+LOAD C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_configs_user.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_key_deal.o
 LOAD obj\Debug\apps_soundbox\bluetooth\btstack\bt_key_msg.o
@@ -1467,7 +1467,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
 
 .data           0x00300000      0x230
  *(.data*)
- .data          0x00300000      0x230 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .data          0x00300000      0x230 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
  .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
  .data          0x00300230        0x0 C:\JL\pi32\lib\libc.a(lib_a-memset.o)
@@ -1489,14 +1489,14 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .data          0x00300230        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
 
 .ble_rf_ram     0x00300230      0x900
- .ble_rf_ram    0x00300230      0x900 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .ble_rf_ram    0x00300230      0x900 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .ble_bb_ram     0x00300b30      0xbfc
- .ble_bb_ram    0x00300b30      0xbfc C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .ble_bb_ram    0x00300b30      0xbfc C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .bss            0x00301730     0x47ac
  *(.bss)
- .bss           0x00301730     0x10c0 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .bss           0x00301730     0x10c0 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .bss           0x003027f0        0x4 ../include_lib/cpu_lib_ac690x.a(irq_driver_asm.o)
  .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcmp.o)
  .bss           0x003027f4        0x0 C:\JL\pi32\lib\libc.a(lib_a-memcpy.o)
@@ -1518,19 +1518,19 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(udivmoddi4.o)
  .bss           0x003027f4        0x0 C:\JL\pi32\lib\libcompiler-rt.a(umoddi3.o)
  *(.dac_buf_sec)
- .dac_buf_sec   0x003027f4      0x280 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .dac_buf_sec   0x003027f4      0x280 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x003027f4                read_buf
                 0x00302a74                bredr_base_addr = .
  *(.bt_classic_base)
  .bt_classic_base
-                0x00302a74      0x450 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x00302a74      0x450 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  *(.bt_sco_codec_data)
  .bt_sco_codec_data
-                0x00302ec4      0x400 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x00302ec4      0x400 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  *(.bt_classic_data)
  .bt_classic_data
-                0x003032c4     0x2c00 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
- COMMON         0x00305ec4       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x003032c4     0x2c00 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
+ COMMON         0x00305ec4       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x00305ec4                OSTCBHighRdy
                 0x00305ec8                fcc_uart_buf
                 0x00305ed8                OSTCBCur
@@ -1544,7 +1544,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x00340080                bredr_base_updata_ram1 = .
                 0x00340080                _bredr_nv_mem_begin = .
  *(.ram1_data)
- .ram1_data     0x00340080     0x2728 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .ram1_data     0x00340080     0x2728 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0034015c                bt_local_addr
                 0x00340180                local
                 0x003401c4                bc51_name
@@ -1561,20 +1561,20 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x003427a8                _bredr_nv_mem_end = .
                 0x003427a8                _ble_nv_mem_begin = .
  *(.bt_nv_data)
- .bt_nv_data    0x003427a8      0x104 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .bt_nv_data    0x003427a8      0x104 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  *(.non_volatile_ram)
  .non_volatile_ram
-                0x003428ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x003428ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x003428fc                _ble_nv_mem_end = .
  *(.eq_buf_sec)
  *(.sd_buf)
- .sd_buf        0x003428fc       0x38 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .sd_buf        0x003428fc       0x38 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x003428fc                sd0_cmd_buf
                 0x00342914                sd1_cmd_buf
                 0x0034292c                g_sd0_var_p
                 0x00342930                g_sd1_var_p
  *(.usb_buf)
- .usb_buf       0x00342934       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .usb_buf       0x00342934       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x00342934                g_husb_read_ctl
                 0x0034293c                mass_mutex
                 0x0034294c                g_susb_dmabuf_p
@@ -1583,7 +1583,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x00342958                USB_Bulk_only
                 0x00342998                g_usb_detect_var
  *(.common)
- .common        0x003429a0      0x126 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .common        0x003429a0      0x126 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x00342a64                set_sys_freq
  *memcpy.o(.text .rodata*)
  *fill*         0x00342ac6        0x2 
@@ -1597,18 +1597,18 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  *icache_hw.o(.text)
                 0x00342c30                _system_cfg_begin = .
  *(.system_cfg)
- .system_cfg    0x00342c30        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .system_cfg    0x00342c30        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x00342c31                _system_cfg_end = .
  *(.fm_code)
  *fill*         0x00342c31        0x3 
- .fm_code       0x00342c34       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .fm_code       0x00342c34       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x00342c34                fm_isr
  .fm_code       0x00342ca0      0x502 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
                 0x00342ca0                fm_dem
  *(.powerdown_text)
  *fill*         0x003431a2        0x2 
  .powerdown_text
-                0x003431a4      0x408 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x003431a4      0x408 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  *(.zebra_data)
 
 .bss_ram1       0x003435ac     0x1934
@@ -1616,7 +1616,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .stack         0x003435ac      0x400 ../include_lib/cpu_lib_ac690x.a(startup.o)
                 0x003439ac                _stack
  *(.ram1_bss)
- .ram1_bss      0x003439ac     0x1534 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .ram1_bss      0x003439ac     0x1534 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x003439ac                sbc_detect_work_buf
                 0x003444cc                vm_obj
                 0x00344704                rf
@@ -1631,7 +1631,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .text          0x01000000      0x104 ../include_lib/cpu_lib_ac690x.a(startup.o)
                 0x01000000                _start
  *(.const_tab)
- .const_tab     0x01000104       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .const_tab     0x01000104       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x01000104                get_key_tab
                 0x01000104                find_dec_ops
                 0x0100011c                fs_list
@@ -1643,7 +1643,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  *vm_common.o(.text)
  *vm_printf.o(.text)
  *(.vm)
- .vm            0x01000124      0x696 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .vm            0x01000124      0x696 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x01000124                vm_memset
                 0x01000130                vm_memcpy
                 0x01000154                vm_delay
@@ -1673,7 +1673,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  .version       0x010007ba       0x14 obj\Debug\apps_soundbox\cpu\ac690x\version.o
  .version       0x010007ce        0xe ../include_lib/bluetooth_lib.a(version.o)
  *(.text* .rodata*)
- .text          0x010007dc    0x4a3d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .text          0x010007dc    0x4a3d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0100acd0                board_main
                 0x01013178                OSInit
                 0x010131c8                OSIdleTaskInit
@@ -1683,7 +1683,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x01049430                dct32
                 0x0104ab74                sbc_fill_buf_d
  *fill*         0x0104abac        0x4 
- .rodata        0x0104abb0     0xbbb4 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .rodata        0x0104abb0     0xbbb4 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0104e560                sbc_proto_4_40m0_d
                 0x0104e600                synmatrix4_d
                 0x0104e680                synmatrix8_d
@@ -1699,15 +1699,15 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x01053f64                window_s
                 0x01055ae8                leavetable_d
  .rodata.str1.1
-                0x01056764     0x25a0 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x01056764     0x25a0 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                                0x263f (size before relaxing)
- .rodata.cst8   0x01058d04       0x28 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .rodata.cst8   0x01058d04       0x28 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .rodata.str4.4
-                0x01058d2c      0x260 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x01058d2c      0x260 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  *fill*         0x01058f8c        0x4 
- .rodata.cst32  0x01058f90      0x140 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
- .rodata.cst16  0x010590d0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
- .rodata.cst4   0x01059130        0x8 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .rodata.cst32  0x01058f90      0x140 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
+ .rodata.cst16  0x010590d0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
+ .rodata.cst4   0x01059130        0x8 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .text          0x01059138        0x0 obj\Debug\apps_soundbox\cpu\ac690x\version.o
  .text          0x01059138       0x6c ../include_lib/rtos_lib.a(os_cpu.o)
                 0x01059138                OS_HighPrio
@@ -1784,7 +1784,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x0105a7ac                lmp_hci_handler_begin = .
  *(.lmp_hci_handler)
  .lmp_hci_handler
-                0x0105a7ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a7ac       0x50 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a7ac                device_manager_hci_handler
                 0x0105a7c0                lmp_def_hci_handler
                 0x0105a7d4                master_hci_cmd_handler
@@ -1793,27 +1793,27 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x0105a7fc                a2dp_sink_media_probe_begin = .
  *(.a2dp_sink_media_probe)
  .a2dp_sink_media_probe
-                0x0105a7fc       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a7fc       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a7fc                a2dp_aac_probe
                 0x0105a814                a2dp_sbc_probe
                 0x0105a82c                a2dp_sink_media_probe_end = .
                 0x0105a82c                a2dp_sink_media_codec_begin = .
  *(.a2dp_sink_media_codec)
  .a2dp_sink_media_codec
-                0x0105a82c       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a82c       0x30 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a82c                aac_sink_codec
                 0x0105a844                sbc_sink_codec
                 0x0105a85c                a2dp_sink_media_codec_end = .
                 0x0105a85c                a2dp_source_media_codec_begin = .
  *(.a2dp_source_media_codec)
  .a2dp_source_media_codec
-                0x0105a85c       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a85c       0x18 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a85c                a2dp_source_codec
                 0x0105a874                a2dp_source_media_codec_end = .
                 0x0105a874                a2dp_event_handler_begin = .
  *(.a2dp_event_handler)
  .a2dp_event_handler
-                0x0105a874       0x70 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a874       0x70 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a874                a2dp_sink_event_handler
                 0x0105a890                a2dp_source_event_handler
                 0x0105a8ac                probe_source_event_handler
@@ -1822,14 +1822,14 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x0105a8e4                clock_switcher_begin = .
  *(.clock_switch.fun)
  .clock_switch.fun
-                0x0105a8e4        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a8e4        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a8e4                __switch_init_ad_key0_clk_reset
                 0x0105a8e8                __switch_init_timer0_clk_reset
                 0x0105a8ec                __switch_init_uart_reset
                 0x0105a8f0                clock_switcher_end = .
                 0x0105a8f0                bt_sleep_begin = .
  *(.bt_sleep)
- .bt_sleep      0x0105a8f0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .bt_sleep      0x0105a8f0       0x60 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a8f0                bt_suspend_hci_resumehci_release
                 0x0105a8fc                bt_suspend_a2dp_resumea2dp_release
                 0x0105a908                bt_suspend_avctp_resumeavctp_release
@@ -1840,7 +1840,7 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x0105a944                bt_suspend_user_cmd_loop_resumeuser_cmd_loop_release
                 0x0105a950                bt_sleep_end = .
  *(.ble)
- .ble           0x0105a950       0x10 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .ble           0x0105a950       0x10 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a950                ble_h4_can_send_packet_now
                 0x0105a954                ble_h4_send_packet
                 0x0105a958                ble_h4_packet_handler
@@ -1849,14 +1849,14 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
  *(.bt_power)
  *(.poweroff_flash)
  .poweroff_flash
-                0x0105a960       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a960       0x20 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105a980                ble_text_begin = .
  *(.ble_irq_text)
                 0x0105a980                ble_text_end = .
                 0x0105a980                bredr_text_begin = .
  *(.bredr_irq_text)
  .bredr_irq_text
-                0x0105a980      0x1dc C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105a980      0x1dc C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105ab5c                bredr_text_end = .
  *(.zebra)
  *(.sys_cfg)
@@ -1871,14 +1871,14 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
                 0x0105b11c                ape_decode_value_fvhigh
                 0x0105b498                _task_list_begin = .
  *(.task_info)
- .task_info     0x0105b498       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .task_info     0x0105b498       0x6c C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105b498                task_list
                 0x0105b4b0                task_connect_dev
                 0x0105b504                _task_list_end = .
                 0x0105b504                poweroff_text_begin = .
  *(.poweroff_text)
  .poweroff_text
-                0x0105b504     0x16d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105b504     0x16d0 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105b550                radio_set_eninv
                 0x0105b574                irq_disable
                 0x0105b58c                irq_enable
@@ -1931,12 +1931,12 @@ LOAD obj\Debug\apps_soundbox\usb_device\usb_key.o
 .version        0x0105cbfa       0x1a
  *(.ver_magic_start)
  .ver_magic_start
-                0x0105cbfa        0xe C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105cbfa        0xe C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105cbfa                ver_start_magic
  *(.version)
  *(.ver_magic_end)
  .ver_magic_end
-                0x0105cc08        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x0105cc08        0xc C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                 0x0105cc08                ver_end_magic
                 0x00300000                data_addr = ADDR (.data)
                 0x0105cbfa                data_begin = text_end
@@ -2007,14 +2007,14 @@ LOAD C:\JL\pi32\lib\libcompiler-rt.a
 OUTPUT(download\ac690x\post_build\ac690x.or32 elf32-pi32)
 
 .debug_str      0x00000000    0x2d71d
- .debug_str     0x00000000    0x2d71d C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_str     0x00000000    0x2d71d C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
                               0x30b6b (size before relaxing)
 
 .debug_loc      0x00000000    0x25348
- .debug_loc     0x00000000    0x25348 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_loc     0x00000000    0x25348 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .debug_abbrev   0x00000000      0xf6f
- .debug_abbrev  0x00000000      0xea7 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_abbrev  0x00000000      0xea7 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .debug_abbrev  0x00000ea7       0x28 ../include_lib/rtos_lib.a(os_cpu.o)
  .debug_abbrev  0x00000ecf       0x28 ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
  .debug_abbrev  0x00000ef7       0x28 ../include_lib/cpu_lib_ac690x.a(startup.o)
@@ -2022,7 +2022,7 @@ OUTPUT(download\ac690x\post_build\ac690x.or32 elf32-pi32)
  .debug_abbrev  0x00000f47       0x28 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
 
 .debug_info     0x00000000    0x83561
- .debug_info    0x00000000    0x82a81 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_info    0x00000000    0x82a81 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .debug_info    0x00082a81      0x204 ../include_lib/rtos_lib.a(os_cpu.o)
  .debug_info    0x00082c85      0x20e ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
  .debug_info    0x00082e93      0x1e5 ../include_lib/cpu_lib_ac690x.a(startup.o)
@@ -2030,24 +2030,24 @@ OUTPUT(download\ac690x\post_build\ac690x.or32 elf32-pi32)
  .debug_info    0x0008324a      0x317 ../include_lib/cpu_lib_ac690x.a(fm_dem.o)
 
 .debug_ranges   0x00000000     0x85e8
- .debug_ranges  0x00000000     0x85e8 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_ranges  0x00000000     0x85e8 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .debug_macinfo  0x00000000        0x1
  .debug_macinfo
-                0x00000000        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x00000000        0x1 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .debug_pubnames
                 0x00000000    0x170fa
  .debug_pubnames
-                0x00000000    0x170fa C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x00000000    0x170fa C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .debug_pubtypes
                 0x00000000     0xe7c9
  .debug_pubtypes
-                0x00000000     0xe7c9 C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+                0x00000000     0xe7c9 C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
 
 .debug_line     0x00000000    0x45905
- .debug_line    0x00000000    0x4541c C:\Users\13612\AppData\Local\Temp\lto-llvm-53fac1.o
+ .debug_line    0x00000000    0x4541c C:\Users\13612\AppData\Local\Temp\lto-llvm-92b4cd.o
  .debug_line    0x0004541c       0xc3 ../include_lib/rtos_lib.a(os_cpu.o)
  .debug_line    0x000454df       0x7f ../include_lib/bluetooth_lib.a(bigint_mul_core_bc51.o)
  .debug_line    0x0004555e       0x2a ../include_lib/bluetooth_lib.a(version.o)
